@@ -11,51 +11,66 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <nav>
-        <a href="./index.html" lang="en" class="header-logo"
-          ><span class="logo-part">Web</span>Studio
-        </a>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="./index.html" class="header-link current">Студія</a>
+      <div class="container">
+        <nav>
+          <a href="./index.html" lang="en" class="header-logo"
+            ><span class="logo-part">Web</span>Studio
+          </a>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="header-link current">Студія</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">Контакти</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="contacts list">
-        <li class="contacts-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contacts-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero-title">
-          Ефективне рішення <br />
-          для вашого бізнесу
-        </h1>
-        <button type="button" class="button primary">Замовити послугу</button>
+      <section class="hero section">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              Ефективне рішення <br />
+              для вашого бізнесу
+            </h1>
+            <button type="button" class="button primary">
+              Замовити послугу
+            </button>
+          </div>
+        </div>
       </section>
 
-      <section class="feature">
+      <section class="feature section">
         <h2 class="feature-title visually-hidden">Наші особливості</h2>
         <ul class="feature-list list">
           <li class="feature-item">
@@ -86,8 +101,8 @@
           </li>
         </ul>
       </section>
-      <section class="work">
-        <div>
+      <section class="work section">
+        <div class="work-content">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="work list">
             <li>
@@ -117,7 +132,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team section">
         <h2 class="team-title">Наша команда</h2>
         <div>
           <ul class="team-list list">
